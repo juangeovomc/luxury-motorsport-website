@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <title>Contacto - LUXURY MOTORSPORT</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/Estilo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 50px 20px;
+            background-color: #fafafa;
+            text-align: center;
+        }
+
+        .luxury-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #6200ff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        .contact-info {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #6200ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #4d00cc;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nuestrocontacto.html">Nuestro Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Sección de Contacto -->
+    <section>
+        <h1 class="luxury-title">Contáctanos</h1>
+        <div class="contact-info">
+            <p><strong>Dirección:</strong> Envigado, Antioquia, Colombia</p>
+            <p><strong>Teléfono:</strong> +57 311-716-25-73</p>
+            <p><strong>Email:</strong> contactojuangeovo@luxurymotorsport.com</p>
+        </div>
+
+        <!-- Formulario de Contacto -->
+        <form action="enviar_contacto.php" method="POST">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <input type="submit" value="Enviar Mensaje">
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        © 2024 LUXURY MOTORSPORT. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

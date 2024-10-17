@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+    <title>Servicios - LUXURY MOTORSPORT</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/Estilo.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 50px 20px;
+            background-color: #fafafa;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .service {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h3 {
+            font-size: 28px;
+            color: #6200ff;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        iframe {
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li> <!-- Corregido -->
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nuestrocontacto.html">Nuestro Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Sección de Servicios -->
+    <section>
+        <div class="gallery">
+            <img src="img/buga.jpg" alt="BUGATTI">
+            <img src="img/svj.jpg" alt="AVENTADOR">
+        </div>
+
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/FuS_bXJNync?autoplay=1&mute=1"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Servicios</h2>
+
+        <div class="service">
+            <h3>Venta de Vehículos Nuevos y Usados</h3>
+            <p>Encuentra una amplia selección de carros y motos de lujo, nuevos y usados, con opciones de financiamiento flexibles.</p>
+        </div>
+
+        <div class="service">
+            <h3>Personalización de Vehículos</h3>
+            <p>Ofrecemos opciones exclusivas para personalizar tu auto o moto de lujo, desde pintura hasta accesorios de alto rendimiento.</p>
+        </div>
+
+        <div class="service">
+            <h3>Test Drive Exclusivo</h3>
+            <p>Reserva un test drive VIP y experimenta la potencia y el lujo de nuestros vehículos en rutas especiales.</p>
+        </div>
+
+        <div class="service">
+            <h3>Financiamiento y Leasing de Lujo</h3>
+            <p>Accede a planes de financiamiento y leasing diseñados especialmente para autos y motos de alta gama.</p>
+        </div>
+
+        <div class="service">
+            <h3>Mantenimiento y Servicios Premium</h3>
+            <p>Mantenimiento especializado para vehículos de lujo, con recogida y entrega a domicilio y servicio de detallado premium.</p>
+        </div>
+
+        <div class="service">
+            <h3>Compra Segura de Vehículos</h3>
+            <p>Ofrecemos tasación de autos usados y programas de recompra con procesos fáciles y transparentes.</p>
+        </div>
+
+        <div class="service">
+            <h3>Accesorios y Equipamiento Premium</h3>
+            <p>Personaliza tu vehículo con accesorios de lujo y piezas de repuesto de alta calidad.</p>
+        </div>
+
+        <div class="service">
+            <h3>Alquiler de Vehículos de Lujo</h3>
+            <p>Ofrecemos alquiler de autos y motos de lujo para eventos especiales, bodas o escapadas exclusivas.</p>
+        </div>
+
+        <div class="service">
+            <h3>Venta de Vehículos Clásicos de Colección</h3>
+            <p>Compra vehículos clásicos de lujo restaurados para coleccionistas con asesoramiento personalizado.</p>
+        </div>
+
+        <div class="service">
+            <h3>Club de Propietarios de Autos de Lujo</h3>
+            <p>Accede a beneficios exclusivos y participa en rallies y exhibiciones de autos de lujo.</p>
+        </div>
+        
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        © 2024 LUXURY MOTORSPORT. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

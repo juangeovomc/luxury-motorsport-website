@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <title>LUXURY MOTORSPORT</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/Estilo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 50px 20px;
+            background-color: #fafafa;
+            text-align: center;
+        }
+
+        .luxury-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #6200ff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nuestrocontacto.html">Nuestro Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Sección Principal -->
+    <section>
+        <h1 class="luxury-title">LUXURY MOTORSPORT</h1>
+        <h2>¿Quiénes Somos?</h2>
+
+        <p>En Luxury Motorsport, somos apasionados por los automóviles de lujo. Fundada en 2024 por Juan Jose Geovo Morales inspirado en Smoky Nagatta, nuestra misión es ofrecer a nuestros clientes una experiencia única en la compra y personalización de vehículos exclusivos.</p>
+        
+        <!-- Video -->
+        <iframe src="https://www.youtube.com/embed/Tps8pmF0wyI?autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <div class="gallery">
+            <img src="img/v12.jpg" alt="v12">
+            <img src="img/demon.jpg" alt="demon">
+        </div>
+        
+        <p>Con un equipo de expertos en la industria automotriz, nos enorgullecemos de brindar un servicio excepcional y atención al detalle. Creemos que cada vehículo cuenta una historia, y estamos aquí para ayudarte a escribir la tuya.</p>
+        
+        <p>Ubicados en Envigado, Antioquia, estamos listos para atenderte. Contáctanos para conocer más sobre nuestros servicios y cómo podemos ayudarte a encontrar el vehículo de tus sueños.</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        © 2024 LUXURY MOTORSPORT. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
